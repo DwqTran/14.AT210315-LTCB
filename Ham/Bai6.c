@@ -21,7 +21,7 @@ long long poww(int x, int y) {
 long long calc(int n, int x, int tmp[100]) {
     long long res = tmp[1];
     for(int i = 2; i < n; i++) 
-        res += (tmp[i] * pow(x, i - 1));
+        res += (tmp[i] * poww(x, i - 1));
 
     return res;
 }
